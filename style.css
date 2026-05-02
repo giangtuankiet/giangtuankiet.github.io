@@ -111,13 +111,18 @@ body {
 
 .physicists-left, .physicists-right {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 120px;
-    background: transparent; /* Remove subtle background so it looks cleaner */
-    pointer-events: auto; /* make links clickable */
-    overflow-y: auto; /* in case they don't fit */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100vh;
+    width: calc((100% - 750px) / 2);
+    min-width: 140px;
+    background: transparent;
+    pointer-events: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 /* Hide scrollbars for the side panels */
@@ -133,8 +138,9 @@ body {
     text-align: center;
     text-decoration: none;
     color: #333;
-    padding: 5px;
+    padding: 10px;
     transition: transform 0.2s;
+    width: 100px;
 }
 
 .physicist-card:hover {
@@ -146,12 +152,13 @@ body {
 }
 
 .physicist-card img {
-    width: 65px;
-    height: 85px;
+    width: 80px;
+    height: 105px;
     object-fit: cover;
-    border-radius: 5px; /* Bo góc nhẹ thay vì hình tròn */
+    border-radius: 8px; /* Bo góc nhẹ thay vì hình tròn */
     border: 2px solid #ccc;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .physicist-name {
