@@ -146,10 +146,10 @@ body {
 }
 
 .physicist-card img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 85px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5px; /* Bo góc nhẹ thay vì hình tròn */
     border: 2px solid #ccc;
     margin-bottom: 2px;
 }
